@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		E1DECBED1CA4DBDF00B52F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECBEC1CA4DBDF00B52F8C /* AppDelegate.swift */; };
 		E1DECBEF1CA4DBDF00B52F8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECBEE1CA4DBDF00B52F8C /* ViewController.swift */; };
-		E1DECBF21CA4DBDF00B52F8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DECBF01CA4DBDF00B52F8C /* Main.storyboard */; };
 		E1DECBF41CA4DBDF00B52F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */; };
-		E1DECBF71CA4DBDF00B52F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DECBF51CA4DBDF00B52F8C /* LaunchScreen.storyboard */; };
 		E1DECC021CA4DBDF00B52F8C /* TreccoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC011CA4DBDF00B52F8C /* TreccoTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +27,7 @@
 		E1DECBE91CA4DBDF00B52F8C /* Trecco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trecco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DECBEC1CA4DBDF00B52F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1DECBEE1CA4DBDF00B52F8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E1DECBF11CA4DBDF00B52F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E1DECBF61CA4DBDF00B52F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1DECBF81CA4DBDF00B52F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1DECBFD1CA4DBDF00B52F8C /* TreccoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreccoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DECC011CA4DBDF00B52F8C /* TreccoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreccoTests.swift; sourceTree = "<group>"; };
@@ -79,9 +75,7 @@
 			children = (
 				E1DECBEC1CA4DBDF00B52F8C /* AppDelegate.swift */,
 				E1DECBEE1CA4DBDF00B52F8C /* ViewController.swift */,
-				E1DECBF01CA4DBDF00B52F8C /* Main.storyboard */,
 				E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */,
-				E1DECBF51CA4DBDF00B52F8C /* LaunchScreen.storyboard */,
 				E1DECBF81CA4DBDF00B52F8C /* Info.plist */,
 			);
 			path = Trecco;
@@ -177,9 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1DECBF71CA4DBDF00B52F8C /* LaunchScreen.storyboard in Resources */,
 				E1DECBF41CA4DBDF00B52F8C /* Assets.xcassets in Resources */,
-				E1DECBF21CA4DBDF00B52F8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,25 +211,6 @@
 			targetProxy = E1DECBFE1CA4DBDF00B52F8C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E1DECBF01CA4DBDF00B52F8C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1DECBF11CA4DBDF00B52F8C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E1DECBF51CA4DBDF00B52F8C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1DECBF61CA4DBDF00B52F8C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E1DECC041CA4DBDF00B52F8C /* Debug */ = {
@@ -386,6 +359,7 @@
 				E1DECC081CA4DBDF00B52F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1DECC091CA4DBDF00B52F8C /* Build configuration list for PBXNativeTarget "TreccoTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +368,7 @@
 				E1DECC0B1CA4DBDF00B52F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
