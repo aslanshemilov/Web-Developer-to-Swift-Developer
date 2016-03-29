@@ -11,6 +11,8 @@
 		E1DECBEF1CA4DBDF00B52F8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECBEE1CA4DBDF00B52F8C /* ViewController.swift */; };
 		E1DECBF41CA4DBDF00B52F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */; };
 		E1DECC021CA4DBDF00B52F8C /* TreccoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC011CA4DBDF00B52F8C /* TreccoTests.swift */; };
+		E1DECC0E1CA7509F00B52F8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC0D1CA7509F00B52F8C /* MainViewController.swift */; };
+		E1DECC111CAA140300B52F8C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC101CAA140300B52F8C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		E1DECBFD1CA4DBDF00B52F8C /* TreccoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreccoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DECC011CA4DBDF00B52F8C /* TreccoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreccoTests.swift; sourceTree = "<group>"; };
 		E1DECC031CA4DBDF00B52F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1DECC0D1CA7509F00B52F8C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E1DECC101CAA140300B52F8C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 		E1DECBEB1CA4DBDF00B52F8C /* Trecco */ = {
 			isa = PBXGroup;
 			children = (
+				E1DECC0F1CAA13F300B52F8C /* Utilities */,
+				E1DECC0C1CA74FDD00B52F8C /* ViewControllers */,
 				E1DECBEC1CA4DBDF00B52F8C /* AppDelegate.swift */,
 				E1DECBEE1CA4DBDF00B52F8C /* ViewController.swift */,
 				E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */,
@@ -88,6 +94,22 @@
 				E1DECC031CA4DBDF00B52F8C /* Info.plist */,
 			);
 			path = TreccoTests;
+			sourceTree = "<group>";
+		};
+		E1DECC0C1CA74FDD00B52F8C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1DECC0D1CA7509F00B52F8C /* MainViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E1DECC0F1CAA13F300B52F8C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E1DECC101CAA140300B52F8C /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DECC0E1CA7509F00B52F8C /* MainViewController.swift in Sources */,
 				E1DECBEF1CA4DBDF00B52F8C /* ViewController.swift in Sources */,
 				E1DECBED1CA4DBDF00B52F8C /* AppDelegate.swift in Sources */,
+				E1DECC111CAA140300B52F8C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
