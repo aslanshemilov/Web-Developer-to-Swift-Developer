@@ -17,6 +17,8 @@
 		E1DECC161CAA219000B52F8C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC151CAA219000B52F8C /* StartView.swift */; };
 		E1DECC181CAA21A700B52F8C /* StartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC171CAA21A700B52F8C /* StartView.xib */; };
 		E1DECC1A1CACB97100B52F8C /* LayoutFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC191CACB97100B52F8C /* LayoutFunctions.swift */; };
+		E1DECC1C1CACC59D00B52F8C /* ConnectedTrello.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC1B1CACC59D00B52F8C /* ConnectedTrello.swift */; };
+		E1DECC1E1CACC5AD00B52F8C /* ConnectedTrello.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC1D1CACC5AD00B52F8C /* ConnectedTrello.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		E1DECC151CAA219000B52F8C /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		E1DECC171CAA21A700B52F8C /* StartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartView.xib; sourceTree = "<group>"; };
 		E1DECC191CACB97100B52F8C /* LayoutFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutFunctions.swift; sourceTree = "<group>"; };
+		E1DECC1B1CACC59D00B52F8C /* ConnectedTrello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectedTrello.swift; sourceTree = "<group>"; };
+		E1DECC1D1CACC5AD00B52F8C /* ConnectedTrello.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectedTrello.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +89,13 @@
 		E1DECBEB1CA4DBDF00B52F8C /* Trecco */ = {
 			isa = PBXGroup;
 			children = (
-				E1DECC121CAA191B00B52F8C /* Views */,
-				E1DECC0F1CAA13F300B52F8C /* Utilities */,
-				E1DECC0C1CA74FDD00B52F8C /* ViewControllers */,
 				E1DECBEC1CA4DBDF00B52F8C /* AppDelegate.swift */,
-				E1DECBEE1CA4DBDF00B52F8C /* ViewController.swift */,
 				E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */,
 				E1DECBF81CA4DBDF00B52F8C /* Info.plist */,
+				E1DECC0F1CAA13F300B52F8C /* Utilities */,
+				E1DECBEE1CA4DBDF00B52F8C /* ViewController.swift */,
+				E1DECC0C1CA74FDD00B52F8C /* ViewControllers */,
+				E1DECC121CAA191B00B52F8C /* Views */,
 			);
 			path = Trecco;
 			sourceTree = "<group>";
@@ -126,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				E1DECC131CAA19C500B52F8C /* BaseView.swift */,
+				E1DECC1B1CACC59D00B52F8C /* ConnectedTrello.swift */,
+				E1DECC1D1CACC5AD00B52F8C /* ConnectedTrello.xib */,
 				E1DECC151CAA219000B52F8C /* StartView.swift */,
 				E1DECC171CAA21A700B52F8C /* StartView.xib */,
 			);
@@ -213,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DECC1E1CACC5AD00B52F8C /* ConnectedTrello.xib in Resources */,
 				E1DECBF41CA4DBDF00B52F8C /* Assets.xcassets in Resources */,
 				E1DECC181CAA21A700B52F8C /* StartView.xib in Resources */,
 			);
@@ -237,6 +244,7 @@
 				E1DECC141CAA19C500B52F8C /* BaseView.swift in Sources */,
 				E1DECC161CAA219000B52F8C /* StartView.swift in Sources */,
 				E1DECBED1CA4DBDF00B52F8C /* AppDelegate.swift in Sources */,
+				E1DECC1C1CACC59D00B52F8C /* ConnectedTrello.swift in Sources */,
 				E1DECC111CAA140300B52F8C /* Constants.swift in Sources */,
 				E1DECC1A1CACB97100B52F8C /* LayoutFunctions.swift in Sources */,
 			);
