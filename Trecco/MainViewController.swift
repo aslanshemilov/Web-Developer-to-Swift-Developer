@@ -66,9 +66,45 @@ class MainViewController: UIViewController, StartViewProtocol {
         
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    
+    func createWarningAttributedString(trelloConnected: Bool, recordPermission: Bool) -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString()
+        //set up center paragraph style
+        let centerPStyle = NSMutableParagraphStyle()
+        centerPStyle.alignment = .Center
+        centerPStyle.lineBreakMode = .ByWordWrapping
+        
+        if (!trelloConnected){
+            attributedString.appendAttributedString(NSAttributedString(string: "Please connect to Trello\n",
+                attributes: [NSFontAttributeName: UIFont.boldSystemFontOfSize(16), NSParagraphStyleAttributeName: centerPStyle]))
+            
+            attributedString.appendAttributedString(NSAttributedString(string: "You will be able to sync your voice note to a Trello Board\n",
+                attributes: [NSFontAttributeName: UIFont.systemFontOfSize(10), NSParagraphStyleAttributeName: centerPStyle]))
+        }
+        
+        if(!recordPermission) {
+            attributedString.appendAttributedString(NSAttributedString(string: "Please allow Access to the Microphone\n",
+                attributes: [NSFontAttributeName: UIFont.boldSystemFontOfSize(16), NSParagraphStyleAttributeName: centerPStyle]))
+            
+            attributedString.appendAttributedString(NSAttributedString(string: "You will be able to create voice notes. After recording the note, it will be sent to IBM's Watson to be transcribed.\n", attributes: [NSFontAttributeName: UIFont.systemFontOfSize(10), NSParagraphStyleAttributeName: centerPStyle]))
+        }
+        
+        
+        return attributedString
+    }
 
     
     func updateInstructionsAndRecord() {
+        let avSession: AVAudioSession = AVAudioSession.sharedInstance()
+        let recordPermission: Bool = avSession.recordPermission() == AVAudioSessionRecordPermission.Granted
+        let trelloConnected: Bool = false
+        
+        self.setInstructions(trelloConnected, recordPermission: recordPermission)
+    }
+    
+    func setInstructions(trelloConnected: Bool, recordPermission: Bool) {
+        let attributedString = self.createWarningAttributedString(trelloConnected, recordPermission: recordPermission)
+        (self.view as! StartView).updateInstructions(attributedString)
     }
 
 }
