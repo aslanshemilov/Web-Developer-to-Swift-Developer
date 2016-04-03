@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E1DECBED1CA4DBDF00B52F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECBEC1CA4DBDF00B52F8C /* AppDelegate.swift */; };
 		E1DECBF41CA4DBDF00B52F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */; };
-		E1DECC021CA4DBDF00B52F8C /* TreccoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC011CA4DBDF00B52F8C /* TreccoTests.swift */; };
 		E1DECC0E1CA7509F00B52F8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC0D1CA7509F00B52F8C /* MainViewController.swift */; };
 		E1DECC111CAA140300B52F8C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC101CAA140300B52F8C /* Constants.swift */; };
 		E1DECC141CAA19C500B52F8C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC131CAA19C500B52F8C /* BaseView.swift */; };
@@ -19,6 +18,9 @@
 		E1DECC1C1CACC59D00B52F8C /* ConnectedTrello.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC1B1CACC59D00B52F8C /* ConnectedTrello.swift */; };
 		E1DECC1E1CACC5AD00B52F8C /* ConnectedTrello.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC1D1CACC5AD00B52F8C /* ConnectedTrello.xib */; };
 		E1DECC201CB1614100B52F8C /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC1F1CB1614100B52F8C /* RecordingViewController.swift */; };
+		E1DECC221CB18FF700B52F8C /* StartViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC211CB18FF700B52F8C /* StartViewTests.swift */; };
+		E1DECC241CB1947400B52F8C /* IBM_Watson.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC231CB1947400B52F8C /* IBM_Watson.png */; };
+		E1DECC261CB1981400B52F8C /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC251CB1981400B52F8C /* MainViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 		E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1DECBF81CA4DBDF00B52F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1DECBFD1CA4DBDF00B52F8C /* TreccoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreccoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1DECC011CA4DBDF00B52F8C /* TreccoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreccoTests.swift; sourceTree = "<group>"; };
 		E1DECC031CA4DBDF00B52F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1DECC0D1CA7509F00B52F8C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E1DECC101CAA140300B52F8C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -48,6 +49,9 @@
 		E1DECC1B1CACC59D00B52F8C /* ConnectedTrello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectedTrello.swift; sourceTree = "<group>"; };
 		E1DECC1D1CACC5AD00B52F8C /* ConnectedTrello.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectedTrello.xib; sourceTree = "<group>"; };
 		E1DECC1F1CB1614100B52F8C /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		E1DECC211CB18FF700B52F8C /* StartViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewTests.swift; sourceTree = "<group>"; };
+		E1DECC231CB1947400B52F8C /* IBM_Watson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IBM_Watson.png; sourceTree = "<group>"; };
+		E1DECC251CB1981400B52F8C /* MainViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +106,10 @@
 		E1DECC001CA4DBDF00B52F8C /* TreccoTests */ = {
 			isa = PBXGroup;
 			children = (
-				E1DECC011CA4DBDF00B52F8C /* TreccoTests.swift */,
+				E1DECC231CB1947400B52F8C /* IBM_Watson.png */,
 				E1DECC031CA4DBDF00B52F8C /* Info.plist */,
+				E1DECC211CB18FF700B52F8C /* StartViewTests.swift */,
+				E1DECC251CB1981400B52F8C /* MainViewControllerTests.swift */,
 			);
 			path = TreccoTests;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DECC241CB1947400B52F8C /* IBM_Watson.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1DECC021CA4DBDF00B52F8C /* TreccoTests.swift in Sources */,
+				E1DECC221CB18FF700B52F8C /* StartViewTests.swift in Sources */,
+				E1DECC261CB1981400B52F8C /* MainViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
