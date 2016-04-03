@@ -9,7 +9,8 @@
 import UIKit
 import AVFoundation
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, StartViewProtocol {
+    var infoLoaded: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,38 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+     // MARK: StartViewProtocol
+    func recordPressed(sender: UIButton) {
+        let recording = RecordingViewController()
+        self.navigationController?.pushViewController(recording, animated: true)
+    }
+    
+    func trelloOAuthSend(sender: UIButton!) {
+
+    }
+    
+    func logOutOfTrello() {
+        let alert = UIAlertController(title: "Trello Log Out", message: "Do you want to log out of Trello?", preferredStyle: .Alert)
+        let yesAction = UIAlertAction(title: "Yes", style: .Default, handler: {action in
+            //self._trelloAccount.removeTrello()
+            
+            (self.view as! StartView).createTrelloLoginButton()
+            
+            
+            self.updateInstructionsAndRecord()
+            self.infoLoaded = false
+        })
+        let noAction = UIAlertAction(title: "No", style: .Default, handler: {action in
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        })
+        
+        alert.addAction(yesAction)
+        alert.addAction(noAction)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+
     
     func updateInstructionsAndRecord() {
     }

@@ -10,6 +10,7 @@
                 <outlet property="cttView" destination="ZXI-wW-0Ke" id="2ac-L0-WIY"/>
                 <outlet property="recordButton" destination="Tx2-Jd-4d7" id="Pg7-99-c6T"/>
                 <outlet property="startRecordButton" destination="vfb-N7-Cqh" id="ksg-31-dtT"/>
+                <outlet property="view" destination="iN0-l3-epB" id="lGI-7v-5lW"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

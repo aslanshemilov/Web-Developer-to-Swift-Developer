@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E1DECBED1CA4DBDF00B52F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECBEC1CA4DBDF00B52F8C /* AppDelegate.swift */; };
-		E1DECBEF1CA4DBDF00B52F8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECBEE1CA4DBDF00B52F8C /* ViewController.swift */; };
 		E1DECBF41CA4DBDF00B52F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */; };
 		E1DECC021CA4DBDF00B52F8C /* TreccoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC011CA4DBDF00B52F8C /* TreccoTests.swift */; };
 		E1DECC0E1CA7509F00B52F8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC0D1CA7509F00B52F8C /* MainViewController.swift */; };
@@ -19,6 +18,7 @@
 		E1DECC1A1CACB97100B52F8C /* LayoutFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC191CACB97100B52F8C /* LayoutFunctions.swift */; };
 		E1DECC1C1CACC59D00B52F8C /* ConnectedTrello.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC1B1CACC59D00B52F8C /* ConnectedTrello.swift */; };
 		E1DECC1E1CACC5AD00B52F8C /* ConnectedTrello.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC1D1CACC5AD00B52F8C /* ConnectedTrello.xib */; };
+		E1DECC201CB1614100B52F8C /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC1F1CB1614100B52F8C /* RecordingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,6 @@
 /* Begin PBXFileReference section */
 		E1DECBE91CA4DBDF00B52F8C /* Trecco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trecco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DECBEC1CA4DBDF00B52F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1DECBEE1CA4DBDF00B52F8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1DECBF81CA4DBDF00B52F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1DECBFD1CA4DBDF00B52F8C /* TreccoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreccoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +47,7 @@
 		E1DECC191CACB97100B52F8C /* LayoutFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutFunctions.swift; sourceTree = "<group>"; };
 		E1DECC1B1CACC59D00B52F8C /* ConnectedTrello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectedTrello.swift; sourceTree = "<group>"; };
 		E1DECC1D1CACC5AD00B52F8C /* ConnectedTrello.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectedTrello.xib; sourceTree = "<group>"; };
+		E1DECC1F1CB1614100B52F8C /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,6 @@
 				E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */,
 				E1DECBF81CA4DBDF00B52F8C /* Info.plist */,
 				E1DECC0F1CAA13F300B52F8C /* Utilities */,
-				E1DECBEE1CA4DBDF00B52F8C /* ViewController.swift */,
 				E1DECC0C1CA74FDD00B52F8C /* ViewControllers */,
 				E1DECC121CAA191B00B52F8C /* Views */,
 			);
@@ -113,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				E1DECC0D1CA7509F00B52F8C /* MainViewController.swift */,
+				E1DECC1F1CB1614100B52F8C /* RecordingViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1DECC0E1CA7509F00B52F8C /* MainViewController.swift in Sources */,
-				E1DECBEF1CA4DBDF00B52F8C /* ViewController.swift in Sources */,
+				E1DECC201CB1614100B52F8C /* RecordingViewController.swift in Sources */,
 				E1DECC141CAA19C500B52F8C /* BaseView.swift in Sources */,
 				E1DECC161CAA219000B52F8C /* StartView.swift in Sources */,
 				E1DECBED1CA4DBDF00B52F8C /* AppDelegate.swift in Sources */,
