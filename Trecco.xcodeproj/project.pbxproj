@@ -21,6 +21,8 @@
 		E1DECC221CB18FF700B52F8C /* StartViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC211CB18FF700B52F8C /* StartViewTests.swift */; };
 		E1DECC241CB1947400B52F8C /* IBM_Watson.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC231CB1947400B52F8C /* IBM_Watson.png */; };
 		E1DECC261CB1981400B52F8C /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC251CB1981400B52F8C /* MainViewControllerTests.swift */; };
+		E1DECC281CB34FA000B52F8C /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC271CB34FA000B52F8C /* RecordView.swift */; };
+		E1DECC2A1CB34FAE00B52F8C /* RecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC291CB34FAE00B52F8C /* RecordView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		E1DECC211CB18FF700B52F8C /* StartViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewTests.swift; sourceTree = "<group>"; };
 		E1DECC231CB1947400B52F8C /* IBM_Watson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IBM_Watson.png; sourceTree = "<group>"; };
 		E1DECC251CB1981400B52F8C /* MainViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
+		E1DECC271CB34FA000B52F8C /* RecordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		E1DECC291CB34FAE00B52F8C /* RecordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				E1DECC1D1CACC5AD00B52F8C /* ConnectedTrello.xib */,
 				E1DECC151CAA219000B52F8C /* StartView.swift */,
 				E1DECC171CAA21A700B52F8C /* StartView.xib */,
+				E1DECC271CB34FA000B52F8C /* RecordView.swift */,
+				E1DECC291CB34FAE00B52F8C /* RecordView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1DECC1E1CACC5AD00B52F8C /* ConnectedTrello.xib in Resources */,
+				E1DECC2A1CB34FAE00B52F8C /* RecordView.xib in Resources */,
 				E1DECBF41CA4DBDF00B52F8C /* Assets.xcassets in Resources */,
 				E1DECC181CAA21A700B52F8C /* StartView.xib in Resources */,
 			);
@@ -247,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1DECC0E1CA7509F00B52F8C /* MainViewController.swift in Sources */,
+				E1DECC281CB34FA000B52F8C /* RecordView.swift in Sources */,
 				E1DECC201CB1614100B52F8C /* RecordingViewController.swift in Sources */,
 				E1DECC141CAA19C500B52F8C /* BaseView.swift in Sources */,
 				E1DECC161CAA219000B52F8C /* StartView.swift in Sources */,
