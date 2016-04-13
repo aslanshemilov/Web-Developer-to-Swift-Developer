@@ -23,6 +23,8 @@
 		E1DECC261CB1981400B52F8C /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC251CB1981400B52F8C /* MainViewControllerTests.swift */; };
 		E1DECC281CB34FA000B52F8C /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC271CB34FA000B52F8C /* RecordView.swift */; };
 		E1DECC2A1CB34FAE00B52F8C /* RecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC291CB34FAE00B52F8C /* RecordView.xib */; };
+		E1DECC2C1CB74AB700B52F8C /* HandleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC2B1CB74AB700B52F8C /* HandleError.swift */; };
+		E1DECC2E1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC2D1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		E1DECC251CB1981400B52F8C /* MainViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
 		E1DECC271CB34FA000B52F8C /* RecordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		E1DECC291CB34FAE00B52F8C /* RecordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordView.xib; sourceTree = "<group>"; };
+		E1DECC2B1CB74AB700B52F8C /* HandleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleError.swift; sourceTree = "<group>"; };
+		E1DECC2D1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessRecordingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E1DECC0D1CA7509F00B52F8C /* MainViewController.swift */,
+				E1DECC2D1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift */,
 				E1DECC1F1CB1614100B52F8C /* RecordingViewController.swift */,
 			);
 			name = ViewControllers;
@@ -131,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				E1DECC101CAA140300B52F8C /* Constants.swift */,
+				E1DECC2B1CB74AB700B52F8C /* HandleError.swift */,
 				E1DECC191CACB97100B52F8C /* LayoutFunctions.swift */,
 			);
 			name = Utilities;
@@ -142,10 +148,10 @@
 				E1DECC131CAA19C500B52F8C /* BaseView.swift */,
 				E1DECC1B1CACC59D00B52F8C /* ConnectedTrello.swift */,
 				E1DECC1D1CACC5AD00B52F8C /* ConnectedTrello.xib */,
-				E1DECC151CAA219000B52F8C /* StartView.swift */,
-				E1DECC171CAA21A700B52F8C /* StartView.xib */,
 				E1DECC271CB34FA000B52F8C /* RecordView.swift */,
 				E1DECC291CB34FAE00B52F8C /* RecordView.xib */,
+				E1DECC151CAA219000B52F8C /* StartView.swift */,
+				E1DECC171CAA21A700B52F8C /* StartView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 				E1DECC0E1CA7509F00B52F8C /* MainViewController.swift in Sources */,
 				E1DECC281CB34FA000B52F8C /* RecordView.swift in Sources */,
 				E1DECC201CB1614100B52F8C /* RecordingViewController.swift in Sources */,
+				E1DECC2E1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift in Sources */,
 				E1DECC141CAA19C500B52F8C /* BaseView.swift in Sources */,
+				E1DECC2C1CB74AB700B52F8C /* HandleError.swift in Sources */,
 				E1DECC161CAA219000B52F8C /* StartView.swift in Sources */,
 				E1DECBED1CA4DBDF00B52F8C /* AppDelegate.swift in Sources */,
 				E1DECC1C1CACC59D00B52F8C /* ConnectedTrello.swift in Sources */,
