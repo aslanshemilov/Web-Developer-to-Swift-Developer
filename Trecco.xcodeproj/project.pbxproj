@@ -27,6 +27,7 @@
 		E1DECC2E1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC2D1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift */; };
 		E1DECC301CBF347900B52F8C /* TrelloAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC2F1CBF347900B52F8C /* TrelloAccount.swift */; };
 		E1DECC321CC07EA400B52F8C /* TrelloAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC311CC07EA400B52F8C /* TrelloAccountTests.swift */; };
+		E1DECC341CC7217A00B52F8C /* Keys_example.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC331CC7217A00B52F8C /* Keys_example.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		E1DECC2D1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessRecordingViewController.swift; sourceTree = "<group>"; };
 		E1DECC2F1CBF347900B52F8C /* TrelloAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloAccount.swift; sourceTree = "<group>"; };
 		E1DECC311CC07EA400B52F8C /* TrelloAccountTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloAccountTests.swift; sourceTree = "<group>"; };
+		E1DECC331CC7217A00B52F8C /* Keys_example.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Keys_example.xcconfig; sourceTree = "<group>"; };
+		E1DECC351CC7240800B52F8C /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 		E1DECBE01CA4DBDF00B52F8C = {
 			isa = PBXGroup;
 			children = (
+				E1DECC331CC7217A00B52F8C /* Keys_example.xcconfig */,
 				E1DECBEB1CA4DBDF00B52F8C /* Trecco */,
 				E1DECC001CA4DBDF00B52F8C /* TreccoTests */,
 				E1DECBEA1CA4DBDF00B52F8C /* Products */,
@@ -111,6 +115,7 @@
 				E1DECC0F1CAA13F300B52F8C /* Utilities */,
 				E1DECC0C1CA74FDD00B52F8C /* ViewControllers */,
 				E1DECC121CAA191B00B52F8C /* Views */,
+				E1DECC351CC7240800B52F8C /* Dev.xcconfig */,
 			);
 			path = Trecco;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DECC341CC7217A00B52F8C /* Keys_example.xcconfig in Resources */,
 				E1DECC1E1CACC5AD00B52F8C /* ConnectedTrello.xib in Resources */,
 				E1DECC2A1CB34FAE00B52F8C /* RecordView.xib in Resources */,
 				E1DECBF41CA4DBDF00B52F8C /* Assets.xcassets in Resources */,
@@ -384,6 +390,7 @@
 		};
 		E1DECC071CA4DBDF00B52F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1DECC351CC7240800B52F8C /* Dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Trecco/Info.plist;
