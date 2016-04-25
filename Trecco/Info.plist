@@ -2,16 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>TRELLO_API_SECRET</key>
-	<string>$(TRELLO_API_SECRET)</string>
-	<key>TRELLO_API_KEY</key>
-	<string>$(TRELLO_API_KEY)</string>
-	<key>TRELLO_API_REQUEST_TOKEN_URL</key>
-	<string>https://trello.com/1/OAuthGetRequestToken</string>
-	<key>TRELLO_API_AUTHORIZE_URL</key>
-	<string>https://trello.com/1/OAuthAuthorizeToken?expiration=never&amp;scope=read,write&amp;name=Trecco</string>
-	<key>TRELLO_API_ACCESS_TOKEN_URL</key>
-	<string>https://trello.com/1/OAuthGetAccessToken</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -28,10 +18,31 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>co.ejosh.trecco</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>TRELLO_API_ACCESS_TOKEN_URL</key>
+	<string>https://trello.com/1/OAuthGetAccessToken</string>
+	<key>TRELLO_API_AUTHORIZE_URL</key>
+	<string>https://trello.com/1/OAuthAuthorizeToken?expiration=never&amp;scope=read,write&amp;name=Trecco</string>
+	<key>TRELLO_API_KEY</key>
+	<string>$(TRELLO_API_KEY)</string>
+	<key>TRELLO_API_REQUEST_TOKEN_URL</key>
+	<string>https://trello.com/1/OAuthGetRequestToken</string>
+	<key>TRELLO_API_SECRET</key>
+	<string>$(TRELLO_API_SECRET)</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
