@@ -28,6 +28,12 @@
 		E1DECC301CBF347900B52F8C /* TrelloAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC2F1CBF347900B52F8C /* TrelloAccount.swift */; };
 		E1DECC321CC07EA400B52F8C /* TrelloAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC311CC07EA400B52F8C /* TrelloAccountTests.swift */; };
 		E1DECC341CC7217A00B52F8C /* Keys_example.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC331CC7217A00B52F8C /* Keys_example.xcconfig */; };
+		E1DECC371CCBF86400B52F8C /* cartfile in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC361CCBF86400B52F8C /* cartfile */; };
+		E1DECC391CCBFAFB00B52F8C /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DECC381CCBFAFB00B52F8C /* OAuthSwift.framework */; };
+		E1DECC3C1CCE5F9F00B52F8C /* TrelloOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC3B1CCE5F9F00B52F8C /* TrelloOAuth.swift */; };
+		E1DECC3E1CCE680100B52F8C /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC3D1CCE680100B52F8C /* OAuthViewController.swift */; };
+		E1DECC401CCE756A00B52F8C /* OAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC3F1CCE756A00B52F8C /* OAuthView.swift */; };
+		E1DECC421CCE757700B52F8C /* OAuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC411CCE757700B52F8C /* OAuthView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,12 @@
 		E1DECC311CC07EA400B52F8C /* TrelloAccountTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloAccountTests.swift; sourceTree = "<group>"; };
 		E1DECC331CC7217A00B52F8C /* Keys_example.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Keys_example.xcconfig; sourceTree = "<group>"; };
 		E1DECC351CC7240800B52F8C /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
+		E1DECC361CCBF86400B52F8C /* cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cartfile; sourceTree = "<group>"; };
+		E1DECC381CCBFAFB00B52F8C /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
+		E1DECC3B1CCE5F9F00B52F8C /* TrelloOAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloOAuth.swift; sourceTree = "<group>"; };
+		E1DECC3D1CCE680100B52F8C /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		E1DECC3F1CCE756A00B52F8C /* OAuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthView.swift; sourceTree = "<group>"; };
+		E1DECC411CCE757700B52F8C /* OAuthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DECC391CCBFAFB00B52F8C /* OAuthSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +103,8 @@
 		E1DECBE01CA4DBDF00B52F8C = {
 			isa = PBXGroup;
 			children = (
+				E1DECC381CCBFAFB00B52F8C /* OAuthSwift.framework */,
+				E1DECC361CCBF86400B52F8C /* cartfile */,
 				E1DECC331CC7217A00B52F8C /* Keys_example.xcconfig */,
 				E1DECBEB1CA4DBDF00B52F8C /* Trecco */,
 				E1DECC001CA4DBDF00B52F8C /* TreccoTests */,
@@ -136,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				E1DECC0D1CA7509F00B52F8C /* MainViewController.swift */,
+				E1DECC3D1CCE680100B52F8C /* OAuthViewController.swift */,
 				E1DECC2D1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift */,
 				E1DECC1F1CB1614100B52F8C /* RecordingViewController.swift */,
 			);
@@ -149,6 +165,7 @@
 				E1DECC2B1CB74AB700B52F8C /* HandleError.swift */,
 				E1DECC191CACB97100B52F8C /* LayoutFunctions.swift */,
 				E1DECC2F1CBF347900B52F8C /* TrelloAccount.swift */,
+				E1DECC3B1CCE5F9F00B52F8C /* TrelloOAuth.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -159,6 +176,8 @@
 				E1DECC131CAA19C500B52F8C /* BaseView.swift */,
 				E1DECC1B1CACC59D00B52F8C /* ConnectedTrello.swift */,
 				E1DECC1D1CACC5AD00B52F8C /* ConnectedTrello.xib */,
+				E1DECC3F1CCE756A00B52F8C /* OAuthView.swift */,
+				E1DECC411CCE757700B52F8C /* OAuthView.xib */,
 				E1DECC271CB34FA000B52F8C /* RecordView.swift */,
 				E1DECC291CB34FAE00B52F8C /* RecordView.xib */,
 				E1DECC151CAA219000B52F8C /* StartView.swift */,
@@ -177,6 +196,7 @@
 				E1DECBE51CA4DBDF00B52F8C /* Sources */,
 				E1DECBE61CA4DBDF00B52F8C /* Frameworks */,
 				E1DECBE71CA4DBDF00B52F8C /* Resources */,
+				E1DECC3A1CCBFBFF00B52F8C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,8 +270,10 @@
 			files = (
 				E1DECC341CC7217A00B52F8C /* Keys_example.xcconfig in Resources */,
 				E1DECC1E1CACC5AD00B52F8C /* ConnectedTrello.xib in Resources */,
+				E1DECC371CCBF86400B52F8C /* cartfile in Resources */,
 				E1DECC2A1CB34FAE00B52F8C /* RecordView.xib in Resources */,
 				E1DECBF41CA4DBDF00B52F8C /* Assets.xcassets in Resources */,
+				E1DECC421CCE757700B52F8C /* OAuthView.xib in Resources */,
 				E1DECC181CAA21A700B52F8C /* StartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,11 +288,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E1DECC3A1CCBFBFF00B52F8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/OAuthSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1DECBE51CA4DBDF00B52F8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DECC3E1CCE680100B52F8C /* OAuthViewController.swift in Sources */,
+				E1DECC3C1CCE5F9F00B52F8C /* TrelloOAuth.swift in Sources */,
 				E1DECC0E1CA7509F00B52F8C /* MainViewController.swift in Sources */,
 				E1DECC281CB34FA000B52F8C /* RecordView.swift in Sources */,
 				E1DECC201CB1614100B52F8C /* RecordingViewController.swift in Sources */,
@@ -278,6 +319,7 @@
 				E1DECC141CAA19C500B52F8C /* BaseView.swift in Sources */,
 				E1DECC2C1CB74AB700B52F8C /* HandleError.swift in Sources */,
 				E1DECC161CAA219000B52F8C /* StartView.swift in Sources */,
+				E1DECC401CCE756A00B52F8C /* OAuthView.swift in Sources */,
 				E1DECBED1CA4DBDF00B52F8C /* AppDelegate.swift in Sources */,
 				E1DECC1C1CACC59D00B52F8C /* ConnectedTrello.swift in Sources */,
 				E1DECC301CBF347900B52F8C /* TrelloAccount.swift in Sources */,
@@ -393,6 +435,10 @@
 			baseConfigurationReference = E1DECC351CC7240800B52F8C /* Dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Trecco/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ejosh.Trecco;
@@ -404,6 +450,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Trecco/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ejosh.Trecco;
