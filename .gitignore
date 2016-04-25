@@ -17,11 +17,4 @@ profile
 DerivedData
 .idea/
 Keys.xcconfig
-# we don't want the code
-Carthage/Checkouts
-# we want the actual framework
-# we are only targeting iOS
-!Carthage/Build/
-Carthage/Build/Mac/
-Carthage/Build/tvOS/
-Carthage/Build/watchOS/
+Carthage/
