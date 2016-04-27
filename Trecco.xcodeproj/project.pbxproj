@@ -34,6 +34,11 @@
 		E1DECC3E1CCE680100B52F8C /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC3D1CCE680100B52F8C /* OAuthViewController.swift */; };
 		E1DECC401CCE756A00B52F8C /* OAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC3F1CCE756A00B52F8C /* OAuthView.swift */; };
 		E1DECC421CCE757700B52F8C /* OAuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC411CCE757700B52F8C /* OAuthView.xib */; };
+		E1DECC441CCECA3100B52F8C /* HTTPWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC431CCECA3100B52F8C /* HTTPWrapper.swift */; };
+		E1DECC461CCECD5900B52F8C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DECC451CCECD5900B52F8C /* Alamofire.framework */; };
+		E1DECC481CCECD6D00B52F8C /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DECC471CCECD6D00B52F8C /* BrightFutures.framework */; };
+		E1DECC4A1CCECD7900B52F8C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DECC491CCECD7900B52F8C /* Result.framework */; };
+		E1DECC4C1CCECD8400B52F8C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DECC4B1CCECD8400B52F8C /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,11 @@
 		E1DECC3D1CCE680100B52F8C /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		E1DECC3F1CCE756A00B52F8C /* OAuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthView.swift; sourceTree = "<group>"; };
 		E1DECC411CCE757700B52F8C /* OAuthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthView.xib; sourceTree = "<group>"; };
+		E1DECC431CCECA3100B52F8C /* HTTPWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPWrapper.swift; sourceTree = "<group>"; };
+		E1DECC451CCECD5900B52F8C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E1DECC471CCECD6D00B52F8C /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		E1DECC491CCECD7900B52F8C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		E1DECC4B1CCECD8400B52F8C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DECC4C1CCECD8400B52F8C /* SwiftyJSON.framework in Frameworks */,
+				E1DECC4A1CCECD7900B52F8C /* Result.framework in Frameworks */,
+				E1DECC481CCECD6D00B52F8C /* BrightFutures.framework in Frameworks */,
+				E1DECC461CCECD5900B52F8C /* Alamofire.framework in Frameworks */,
 				E1DECC391CCBFAFB00B52F8C /* OAuthSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +117,10 @@
 		E1DECBE01CA4DBDF00B52F8C = {
 			isa = PBXGroup;
 			children = (
+				E1DECC4B1CCECD8400B52F8C /* SwiftyJSON.framework */,
+				E1DECC491CCECD7900B52F8C /* Result.framework */,
+				E1DECC471CCECD6D00B52F8C /* BrightFutures.framework */,
+				E1DECC451CCECD5900B52F8C /* Alamofire.framework */,
 				E1DECC381CCBFAFB00B52F8C /* OAuthSwift.framework */,
 				E1DECC361CCBF86400B52F8C /* cartfile */,
 				E1DECC331CC7217A00B52F8C /* Keys_example.xcconfig */,
@@ -166,6 +184,7 @@
 				E1DECC191CACB97100B52F8C /* LayoutFunctions.swift */,
 				E1DECC2F1CBF347900B52F8C /* TrelloAccount.swift */,
 				E1DECC3B1CCE5F9F00B52F8C /* TrelloOAuth.swift */,
+				E1DECC431CCECA3100B52F8C /* HTTPWrapper.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -296,6 +315,10 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/OAuthSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
 			);
 			outputPaths = (
 			);
@@ -323,6 +346,7 @@
 				E1DECBED1CA4DBDF00B52F8C /* AppDelegate.swift in Sources */,
 				E1DECC1C1CACC59D00B52F8C /* ConnectedTrello.swift in Sources */,
 				E1DECC301CBF347900B52F8C /* TrelloAccount.swift in Sources */,
+				E1DECC441CCECA3100B52F8C /* HTTPWrapper.swift in Sources */,
 				E1DECC111CAA140300B52F8C /* Constants.swift in Sources */,
 				E1DECC1A1CACB97100B52F8C /* LayoutFunctions.swift in Sources */,
 			);
