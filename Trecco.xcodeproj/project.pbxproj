@@ -39,6 +39,9 @@
 		E1DECC481CCECD6D00B52F8C /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DECC471CCECD6D00B52F8C /* BrightFutures.framework */; };
 		E1DECC4A1CCECD7900B52F8C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DECC491CCECD7900B52F8C /* Result.framework */; };
 		E1DECC4C1CCECD8400B52F8C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DECC4B1CCECD8400B52F8C /* SwiftyJSON.framework */; };
+		E1DECC4F1CD2FBE800B52F8C /* WatsonResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC4E1CD2FBE800B52F8C /* WatsonResults.swift */; };
+		E1DECC511CD2FC4000B52F8C /* TrelloStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC501CD2FC4000B52F8C /* TrelloStructs.swift */; };
+		E1DECC531CD30D7500B52F8C /* ResponseMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC521CD30D7500B52F8C /* ResponseMapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		E1DECC471CCECD6D00B52F8C /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
 		E1DECC491CCECD7900B52F8C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		E1DECC4B1CCECD8400B52F8C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		E1DECC4E1CD2FBE800B52F8C /* WatsonResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonResults.swift; sourceTree = "<group>"; };
+		E1DECC501CD2FC4000B52F8C /* TrelloStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloStructs.swift; sourceTree = "<group>"; };
+		E1DECC521CD30D7500B52F8C /* ResponseMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMapping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 		E1DECBEB1CA4DBDF00B52F8C /* Trecco */ = {
 			isa = PBXGroup;
 			children = (
+				E1DECC4D1CD2FBB800B52F8C /* Data */,
 				E1DECBEC1CA4DBDF00B52F8C /* AppDelegate.swift */,
 				E1DECBF31CA4DBDF00B52F8C /* Assets.xcassets */,
 				E1DECBF81CA4DBDF00B52F8C /* Info.plist */,
@@ -185,6 +192,7 @@
 				E1DECC2F1CBF347900B52F8C /* TrelloAccount.swift */,
 				E1DECC3B1CCE5F9F00B52F8C /* TrelloOAuth.swift */,
 				E1DECC431CCECA3100B52F8C /* HTTPWrapper.swift */,
+				E1DECC521CD30D7500B52F8C /* ResponseMapping.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -203,6 +211,15 @@
 				E1DECC171CAA21A700B52F8C /* StartView.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		E1DECC4D1CD2FBB800B52F8C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E1DECC4E1CD2FBE800B52F8C /* WatsonResults.swift */,
+				E1DECC501CD2FC4000B52F8C /* TrelloStructs.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +356,7 @@
 				E1DECC281CB34FA000B52F8C /* RecordView.swift in Sources */,
 				E1DECC201CB1614100B52F8C /* RecordingViewController.swift in Sources */,
 				E1DECC2E1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift in Sources */,
+				E1DECC4F1CD2FBE800B52F8C /* WatsonResults.swift in Sources */,
 				E1DECC141CAA19C500B52F8C /* BaseView.swift in Sources */,
 				E1DECC2C1CB74AB700B52F8C /* HandleError.swift in Sources */,
 				E1DECC161CAA219000B52F8C /* StartView.swift in Sources */,
@@ -348,6 +366,8 @@
 				E1DECC301CBF347900B52F8C /* TrelloAccount.swift in Sources */,
 				E1DECC441CCECA3100B52F8C /* HTTPWrapper.swift in Sources */,
 				E1DECC111CAA140300B52F8C /* Constants.swift in Sources */,
+				E1DECC531CD30D7500B52F8C /* ResponseMapping.swift in Sources */,
+				E1DECC511CD2FC4000B52F8C /* TrelloStructs.swift in Sources */,
 				E1DECC1A1CACB97100B52F8C /* LayoutFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
