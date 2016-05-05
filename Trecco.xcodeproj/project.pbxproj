@@ -44,6 +44,12 @@
 		E1DECC531CD30D7500B52F8C /* ResponseMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC521CD30D7500B52F8C /* ResponseMapping.swift */; };
 		E1DECC551CD55F0100B52F8C /* WatsonSTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC541CD55F0100B52F8C /* WatsonSTT.swift */; };
 		E1DECC571CD6840F00B52F8C /* TrelloAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC561CD6840F00B52F8C /* TrelloAPI.swift */; };
+		E1DECC591CD8297800B52F8C /* HTTPMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC581CD8297800B52F8C /* HTTPMock.swift */; };
+		E1DECC5B1CD82B2700B52F8C /* TrelloAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC5A1CD82B2700B52F8C /* TrelloAPITests.swift */; };
+		E1DECC5C1CD82D2600B52F8C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DECC491CCECD7900B52F8C /* Result.framework */; };
+		E1DECC5D1CD82D3A00B52F8C /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DECC471CCECD6D00B52F8C /* BrightFutures.framework */; };
+		E1DECC601CD8372300B52F8C /* WatsonSTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC5F1CD8372300B52F8C /* WatsonSTTTests.swift */; };
+		E1DECC621CDAD9AB00B52F8C /* ResponseMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC611CDAD9AB00B52F8C /* ResponseMappingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +105,10 @@
 		E1DECC521CD30D7500B52F8C /* ResponseMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMapping.swift; sourceTree = "<group>"; };
 		E1DECC541CD55F0100B52F8C /* WatsonSTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonSTT.swift; sourceTree = "<group>"; };
 		E1DECC561CD6840F00B52F8C /* TrelloAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloAPI.swift; sourceTree = "<group>"; };
+		E1DECC581CD8297800B52F8C /* HTTPMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMock.swift; sourceTree = "<group>"; };
+		E1DECC5A1CD82B2700B52F8C /* TrelloAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloAPITests.swift; sourceTree = "<group>"; };
+		E1DECC5F1CD8372300B52F8C /* WatsonSTTTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonSTTTests.swift; sourceTree = "<group>"; };
+		E1DECC611CDAD9AB00B52F8C /* ResponseMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMappingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DECC5D1CD82D3A00B52F8C /* BrightFutures.framework in Frameworks */,
+				E1DECC5C1CD82D2600B52F8C /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,11 +179,15 @@
 		E1DECC001CA4DBDF00B52F8C /* TreccoTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1DECC581CD8297800B52F8C /* HTTPMock.swift */,
 				E1DECC231CB1947400B52F8C /* IBM_Watson.png */,
 				E1DECC031CA4DBDF00B52F8C /* Info.plist */,
-				E1DECC211CB18FF700B52F8C /* StartViewTests.swift */,
 				E1DECC251CB1981400B52F8C /* MainViewControllerTests.swift */,
+				E1DECC211CB18FF700B52F8C /* StartViewTests.swift */,
 				E1DECC311CC07EA400B52F8C /* TrelloAccountTests.swift */,
+				E1DECC5A1CD82B2700B52F8C /* TrelloAPITests.swift */,
+				E1DECC5F1CD8372300B52F8C /* WatsonSTTTests.swift */,
+				E1DECC611CDAD9AB00B52F8C /* ResponseMappingTests.swift */,
 			);
 			path = TreccoTests;
 			sourceTree = "<group>";
@@ -386,7 +402,11 @@
 			files = (
 				E1DECC221CB18FF700B52F8C /* StartViewTests.swift in Sources */,
 				E1DECC261CB1981400B52F8C /* MainViewControllerTests.swift in Sources */,
+				E1DECC5B1CD82B2700B52F8C /* TrelloAPITests.swift in Sources */,
+				E1DECC621CDAD9AB00B52F8C /* ResponseMappingTests.swift in Sources */,
+				E1DECC601CD8372300B52F8C /* WatsonSTTTests.swift in Sources */,
 				E1DECC321CC07EA400B52F8C /* TrelloAccountTests.swift in Sources */,
+				E1DECC591CD8297800B52F8C /* HTTPMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +537,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TreccoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ejosh.TreccoTests;
@@ -529,6 +553,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TreccoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ejosh.TreccoTests;
