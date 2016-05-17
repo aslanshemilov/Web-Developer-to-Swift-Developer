@@ -87,8 +87,8 @@ class RecordingViewController: UIViewController, RecordViewProtocol {
     
     func stopRecording() {
         let process = ProcessRecordingViewController()
-        //process.http = HTTP()
-        //process.fileURL = self.fileURL
+        process.http = HTTP()
+        process.fileURL = self.fileURL
         self.navigationController?.pushViewController(process, animated: true)
     }
     

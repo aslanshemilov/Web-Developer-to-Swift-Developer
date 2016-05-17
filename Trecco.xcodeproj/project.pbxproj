@@ -52,6 +52,8 @@
 		E1DECC621CDAD9AB00B52F8C /* ResponseMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC611CDAD9AB00B52F8C /* ResponseMappingTests.swift */; };
 		E1DECC641CE7FC8100B52F8C /* TrelloBoardPickerSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC631CE7FC8100B52F8C /* TrelloBoardPickerSource.swift */; };
 		E1DECC661CE7FCB100B52F8C /* TrelloBoardPickerSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC651CE7FCB100B52F8C /* TrelloBoardPickerSourceTests.swift */; };
+		E1DECC681CE9267D00B52F8C /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DECC671CE9267D00B52F8C /* ProcessView.swift */; };
+		E1DECC6A1CE9269100B52F8C /* ProcessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DECC691CE9269100B52F8C /* ProcessView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		E1DECC611CDAD9AB00B52F8C /* ResponseMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMappingTests.swift; sourceTree = "<group>"; };
 		E1DECC631CE7FC8100B52F8C /* TrelloBoardPickerSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloBoardPickerSource.swift; sourceTree = "<group>"; };
 		E1DECC651CE7FCB100B52F8C /* TrelloBoardPickerSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrelloBoardPickerSourceTests.swift; sourceTree = "<group>"; };
+		E1DECC671CE9267D00B52F8C /* ProcessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
+		E1DECC691CE9269100B52F8C /* ProcessView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProcessView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +240,8 @@
 				E1DECC291CB34FAE00B52F8C /* RecordView.xib */,
 				E1DECC151CAA219000B52F8C /* StartView.swift */,
 				E1DECC171CAA21A700B52F8C /* StartView.xib */,
+				E1DECC671CE9267D00B52F8C /* ProcessView.swift */,
+				E1DECC691CE9269100B52F8C /* ProcessView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 			files = (
 				E1DECC341CC7217A00B52F8C /* Keys_example.xcconfig in Resources */,
 				E1DECC1E1CACC5AD00B52F8C /* ConnectedTrello.xib in Resources */,
+				E1DECC6A1CE9269100B52F8C /* ProcessView.xib in Resources */,
 				E1DECC371CCBF86400B52F8C /* cartfile in Resources */,
 				E1DECC2A1CB34FAE00B52F8C /* RecordView.xib in Resources */,
 				E1DECBF41CA4DBDF00B52F8C /* Assets.xcassets in Resources */,
@@ -384,6 +391,7 @@
 				E1DECC0E1CA7509F00B52F8C /* MainViewController.swift in Sources */,
 				E1DECC281CB34FA000B52F8C /* RecordView.swift in Sources */,
 				E1DECC201CB1614100B52F8C /* RecordingViewController.swift in Sources */,
+				E1DECC681CE9267D00B52F8C /* ProcessView.swift in Sources */,
 				E1DECC2E1CBC8FFB00B52F8C /* ProcessRecordingViewController.swift in Sources */,
 				E1DECC4F1CD2FBE800B52F8C /* WatsonResults.swift in Sources */,
 				E1DECC141CAA19C500B52F8C /* BaseView.swift in Sources */,
