@@ -54,8 +54,8 @@ class StartView: BaseView {
         
         let cttButton = UIButton()
         cttButton.addTarget(self, action: "trelloOAuthSend:", forControlEvents: .TouchUpInside)
-        //let trelloImage = UIImage(named: "Trello-logo")
-        //cttButton.setImage(trelloImage, forState: .Normal)
+        let trelloImage = UIImage(named: "Trello-logo-white")
+        cttButton.setImage(trelloImage, forState: .Normal)
         cttButton.translatesAutoresizingMaskIntoConstraints = false
         cttView.addSubview(cttButton)
         let offCenter = NSLayoutConstraint(item: cttButton,

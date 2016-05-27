@@ -25,9 +25,9 @@
                         <constraint firstAttribute="height" constant="44" id="F6q-NN-NAg"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-Jd-4d7">
-                    <rect key="frame" x="277" y="285" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-Jd-4d7">
+                    <rect key="frame" x="270" y="270" width="60" height="60"/>
+                    <state key="normal" image="Trecco-Mic"/>
                     <connections>
                         <action selector="recordPressed:" destination="-1" eventType="touchUpInside" id="drQ-bY-Qyo"/>
                     </connections>
@@ -35,19 +35,23 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by IBM Watson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCL-Po-Jcw">
                     <rect key="frame" x="207" y="571" width="186" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfb-N7-Cqh">
-                    <rect key="frame" x="246" y="247" width="108" height="30"/>
+                    <rect key="frame" x="246" y="232" width="108" height="30"/>
                     <state key="normal" title="Start Recording"/>
                     <connections>
                         <action selector="recordPressed:" destination="-1" eventType="touchUpInside" id="oZo-Wh-yrn"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Watson" translatesAutoresizingMaskIntoConstraints="NO" id="aYx-F0-JHm">
+                    <rect key="frame" x="393" y="532" width="60" height="60"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="aYx-F0-JHm" secondAttribute="bottom" constant="8" id="26F-5N-11N"/>
                 <constraint firstItem="ZXI-wW-0Ke" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6wW-LE-ptQ"/>
                 <constraint firstItem="Tx2-Jd-4d7" firstAttribute="top" secondItem="vfb-N7-Cqh" secondAttribute="bottom" constant="8" id="8NT-Wm-ntw"/>
                 <constraint firstItem="ZXI-wW-0Ke" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DSv-uG-aK6"/>
@@ -57,7 +61,12 @@
                 <constraint firstItem="bCL-Po-Jcw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZvX-IP-Kl9"/>
                 <constraint firstItem="vfb-N7-Cqh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cO6-y8-GPG"/>
                 <constraint firstAttribute="trailing" secondItem="ZXI-wW-0Ke" secondAttribute="trailing" id="o1G-Ah-1Dj"/>
+                <constraint firstItem="aYx-F0-JHm" firstAttribute="leading" secondItem="bCL-Po-Jcw" secondAttribute="trailing" id="z44-p1-me8"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Trecco-Mic" width="60" height="60"/>
+        <image name="Watson" width="60" height="60"/>
+    </resources>
 </document>

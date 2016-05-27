@@ -27,21 +27,24 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zit-5K-AEG">
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hD5-En-PS4">
+                    <rect key="frame" x="0.0" y="251" width="600" height="216"/>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zit-5K-AEG">
                     <rect key="frame" x="200" y="218" width="200" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="EtW-Bc-yA7"/>
                         <constraint firstAttribute="width" constant="200" id="kPw-Cz-TKn"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <state key="normal" title="Post to"/>
+                    <inset key="titleEdgeInsets" minX="-160" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Post to" image="Trello-logo-blue">
+                        <color key="titleColor" red="0.0" green="0.47450980392156861" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="postToTrelloPressed:" destination="-1" eventType="touchUpInside" id="Bml-za-7YL"/>
                     </connections>
                 </button>
-                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hD5-En-PS4">
-                    <rect key="frame" x="0.0" y="251" width="600" height="216"/>
-                </pickerView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -56,4 +59,7 @@
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Trello-logo-blue" width="87" height="25"/>
+    </resources>
 </document>
